@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinFirst</string>
+    <string name="my_first_kotlin">My First Kotlin</string>
+    <string name="dot">...</string>
+</resources>
