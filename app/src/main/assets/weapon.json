@@ -3,52 +3,92 @@
     {
       "id": 1001,
       "name": "Sword",
-      "damage": 40
+      "damage": 40,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1002,
       "name": "Axe",
-      "damage": 50
+      "damage": 50,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1003,
       "name": "Knife",
-      "damage": 10
+      "damage": 10,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1004,
       "name": "Dagger",
-      "damage": 15
+      "damage": 15,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1005,
       "name": "Two Handed Axe",
-      "damage": 100
+      "damage": 100,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1006,
       "name": "Claw",
-      "damage": 20
+      "damage": 20,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1007,
       "name": "Spear",
-      "damage": 80
+      "damage": 80,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1008,
       "name": "Gun",
-      "damage": 100
+      "damage": 100,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1009,
       "name": "Grenade",
-      "damage": 150
+      "damage": 150,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     },
     {
       "id": 1010,
       "name": "Rudal",
-      "damage": 300
+      "damage": 300,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
+    },
+    {
+      "id": 1011,
+      "name": "Laser Beam",
+      "damage": 150,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
+    },
+    {
+      "id": 1012,
+      "name": "Katana",
+      "damage": 50,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
+    },
+    {
+      "id": 1013,
+      "name": "Blade",
+      "damage": 17,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
+    },
+    {
+      "id": 1014,
+      "name": "Shuriken",
+      "damage": 55,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
+    },
+    {
+      "id": 1015,
+      "name": "Whip",
+      "damage": 77,
+      "description": "Bacon ipsum dolor amet pork belly chuck filet mignon beef turkey sausage fatback ham pastrami. Venison chicken drumstick t-bone turkey brisket. Cupim bacon tenderloin shank turducken, landjaeger pork swine ribeye strip steak turkey capicola flank. Swine biltong andouille capicola beef ribs doner chuck meatloaf pastrami pork loin chicken kevin kielbasa."
     }
   ]
 }
