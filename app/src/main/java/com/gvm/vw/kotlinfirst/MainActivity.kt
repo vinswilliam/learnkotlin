@@ -132,7 +132,7 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener, ICallbackListe
 
         override fun getMovementFlags(recyclerView: RecyclerView?,
                                       viewHolder: RecyclerView.ViewHolder?): Int {
-            return makeFlag(ACTION_STATE_IDLE, RIGHT) or makeFlag(ACTION_STATE_SWIPE, LEFT or RIGHT)
+            return makeFlag(ACTION_STATE_SWIPE, LEFT)
         }
 
         override fun onMove(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?,
