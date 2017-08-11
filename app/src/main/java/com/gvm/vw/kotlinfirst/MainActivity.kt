@@ -7,17 +7,20 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.helper.ItemTouchHelper
+import android.support.v7.widget.helper.ItemTouchHelper.*
 import android.view.*
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.row_weapon.view.*
 
-class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
+class MainActivity : AppCompatActivity(), IWeaponAdapterListener, ICallbackListener {
 
     private val REQUEST_CODE_ADD_WEAPON = 1
 
     var weapons : MutableList<Weapon> = mutableListOf()
     var weaponAdapter = WeaponAdapter(mutableListOf(), this)
+    val weaponTouchHelper = ItemTouchHelper(WeaponItemTouchHelperCallback(this))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +28,12 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
 
         weapons = generateWeapon(this)
 
+
         weaponAdapter.weapons = weapons
         rvWeapon.layoutManager = LinearLayoutManager(this)
         rvWeapon.addItemDecoration(WeaponDecorator())
+        weaponTouchHelper.attachToRecyclerView(rvWeapon)
+
         rvWeapon.adapter = weaponAdapter
     }
 
@@ -35,6 +41,12 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
         val intent = Intent(this, WeaponDetailActivity::class.java)
         intent.putExtra(WeaponDetailActivity.EX_WEAPON, weapon)
         startActivity(intent)
+    }
+
+    override fun onSwiped(pos: Int?) {
+        if (pos != null) {
+            weaponAdapter.remove(pos)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -58,7 +70,6 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
             val newWeapon = data?.getParcelableExtra<Weapon>(AddWeaponActivity.INTENT_NEW_WEAPON)
             if (newWeapon != null) {
                 weaponAdapter.insert(newWeapon)
-
             }
         }
     }
@@ -95,6 +106,12 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
             weapons.add(newWeapon)
             notifyItemInserted(itemCount)
         }
+
+        fun remove(position: Int) {
+            weapons.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemChanged(position, itemCount)
+        }
     }
 
     class WeaponDecorator : RecyclerView.ItemDecoration() {
@@ -111,6 +128,27 @@ class MainActivity : AppCompatActivity(), IWeaponAdapterListener {
         }
     }
 
+    class WeaponItemTouchHelperCallback(val listener: ICallbackListener) : ItemTouchHelper.Callback() {
+
+        override fun getMovementFlags(recyclerView: RecyclerView?,
+                                      viewHolder: RecyclerView.ViewHolder?): Int {
+            return makeFlag(ACTION_STATE_IDLE, RIGHT) or makeFlag(ACTION_STATE_SWIPE, LEFT or RIGHT)
+        }
+
+        override fun onMove(recyclerView: RecyclerView?, viewHolder: RecyclerView.ViewHolder?,
+                            target: RecyclerView.ViewHolder?): Boolean {
+            return false
+        }
+
+        override fun onSwiped(viewHolder: RecyclerView.ViewHolder?, direction: Int) {
+            listener.onSwiped(viewHolder?.layoutPosition)
+        }
+
+    }
+}
+
+interface ICallbackListener {
+    fun onSwiped(pos: Int?)
 }
 
 interface IWeaponAdapterListener {
